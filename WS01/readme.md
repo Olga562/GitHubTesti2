@@ -42,7 +42,7 @@ alert("Still one more hello world"); // Enter here
 Try also typing nonsense to the console. You will see an error message in red.
 
 
-## JS does not have any built-in print functions. You can output data in the following ways
+##  6. JS does not have any built-in print functions. You can output data in the following ways
 
 Writing into an alert box, using window.alert().
 Writing into the HTML output using document.write().
@@ -50,7 +50,7 @@ Writing into the browser console, using console.log().
 
 Try also adding the code in the SCRIPT-section of the example1.html -page and then loading the page.
 
-## Defining variables
+##  7. Defining variables
 
 Go back to the console and clear it. Then type in the following commands:
 ```bash
@@ -65,7 +65,7 @@ With console.log -function you can print data to the same Javascript console you
 
 
 
-## Conditionals.
+##  8. Conditionals.
 
 Try out the following snippet of code in your JS console. Play around with it and see what happens. Remember to use Shift+Enter if you have multiple lines of code you want to enter before running the block.
 ```bash
@@ -88,7 +88,7 @@ Have more paths (else if -statements) for different age ranges
 output different messages for each agegroup
 output the message to the console as well
 
-## Loops.
+##  9. Loops.
 
 Try out the following code and play around with it.
 ```bash
@@ -104,7 +104,7 @@ Output the values generated to the console as they are created
 Output the values using document.write, using HTML-tags to format them
 Randomize numers between 1-100
 output the message to the console as well
-## Functions.
+##  10. Functions.
 
 Try out the following code and play around with it.
 ```bash
@@ -119,7 +119,7 @@ Modify the code so, that ...
 You will assign values to two variables and then call the function with those variables
 Check if the sum of the two numbers is over 100, if it is, print out (alert) a message to the user
 Output the values and sum using document.write, using HTML-tags to format them
-## Objects.
+##  11. Objects.
 
 Try out the following code and play around with it.
 
@@ -139,7 +139,7 @@ Modify the code so, that it will ...
 have a field for address and telephone.
 have one anonymous method named printInfo, which will print all the information of the person object in the console
 create an array with 4 person objects in it. Then loop through the array and print out the first and lastname for each item
-## Extras.
+##  12. Extras.
 
 Write a JavaScript function that will return the given man’s age (input parameter) as dogs age. It is usually considered that dogs age is man’s age multiplied by seven.
 
