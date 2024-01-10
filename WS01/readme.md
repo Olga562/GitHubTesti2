@@ -6,27 +6,27 @@ Save Workshop1_example1.html and open it with a web browser (preferably Google C
 You see it’s a plain HTML-file no magic tricks attached. BUT - as a matter of fact a block of JavaScript is being run every time the page loads, but since it doesn’t output anything or modify the page, you can’t see it.
 
 
-## Press F12 to open Developer tools and select “Console” to see what JavaScript interpreter is doing
+##  1. Press F12 to open Developer tools and select “Console” to see what JavaScript interpreter is doing
 
 Console is the place where possible error messages or console logging will be printed.
 
 
-## Close the window and see the source code of the page with Ctrl+U.
+##  2. Close the window and see the source code of the page with Ctrl+U.
 
 There you can see some JavaScript in the 'script' -block. Next close the source - window.
 
 
-## Save Workshop1_example1.html and open it with a web browser (preferably Google Chrome/Firefox/Brave).
+##  3. Save Workshop1_example1.html and open it with a web browser (preferably Google Chrome/Firefox/Brave).
 
 You see it’s a plain HTML - file no magic tricks attached.BUT - as a matter of fact a block of JavaScript is being run every time the page loads, but since it doesn’t output anything or modify the page, you can’t see it.
 
 
-## Open the JS Console once again (F12).
+##  4. Open the JS Console once again (F12).
 
 Console is also the place where you can enter and run JavaScript commands to your browser. Lets try it out. You can increase the font size by pressing Ctrl and scrolling the mouse wheel at the same time.
 
 
-## Alert() -function is one of the easiest way to display data to the user.
+##  5. Alert() -function is one of the easiest way to display data to the user.
 
 It is also often used when debugging or developing a program in order to see the values of a variable etc.
 Type in alert(); What happens?
