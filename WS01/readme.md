@@ -1,6 +1,6 @@
 # WEB sovelluskehitys Javascritillä harjoitukset
 
-# Welcome to Workshop 01 excercises
+# Workshop 01 excercises
 Save Workshop1_example1.html and open it with a web browser (preferably Google Chrome/Firefox/Brave).
 
 You see it’s a plain HTML-file no magic tricks attached. BUT - as a matter of fact a block of JavaScript is being run every time the page loads, but since it doesn’t output anything or modify the page, you can’t see it.
@@ -29,9 +29,9 @@ Console is also the place where you can enter and run JavaScript commands to you
 ##  5. Alert() -function is one of the easiest way to display data to the user.
 
 It is also often used when debugging or developing a program in order to see the values of a variable etc.
-Type in alert(); What happens?
-Type in alert(“Hello World”); What happens?
-Type in alert(“Hello World”); alert(“Hello World”); alert(“Hello World”); What happens?
+- Type in alert(); What happens?
+- Type in alert(“Hello World”); What happens?
+- Type in alert(“Hello World”); alert(“Hello World”); alert(“Hello World”); What happens?
 Sometimes one has to enter commands which require multiple lines. In these cases, use SHIFT+Enter to change the line without running the command. All the lines will be run consequently.
 
 ```bash
