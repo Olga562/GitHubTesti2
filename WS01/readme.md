@@ -1,58 +1,62 @@
-# WEB sovelluskehitys Javascritillä harjoitukset
-
 # Workshop 01 excercises
 Save Workshop1_example1.html and open it with a web browser (preferably Google Chrome/Firefox/Brave).
 
 You see it’s a plain HTML-file no magic tricks attached. BUT - as a matter of fact a block of JavaScript is being run every time the page loads, but since it doesn’t output anything or modify the page, you can’t see it.
 
 
-##  1. Press F12 to open Developer tools and select “Console” to see what JavaScript interpreter is doing
+##  1. Developer tools 
+
+###  1. Press F12 to open Developer tools and select “Console” to see what JavaScript interpreter is doing
 
 Console is the place where possible error messages or console logging will be printed.
 
 
-##  2. Close the window and see the source code of the page with Ctrl+U.
+###  2. Close the window and see the source code of the page with Ctrl+U.
 
 There you can see some JavaScript in the 'script' -block. Next close the source - window.
 
 
-##  3. Save Workshop1_example1.html and open it with a web browser (preferably Google Chrome/Firefox/Brave).
+###  3. Save Workshop1_example1.html and open it with a web browser (preferably Google Chrome/Firefox/Brave).
 
-You see it’s a plain HTML - file no magic tricks attached.BUT - as a matter of fact a block of JavaScript is being run every time the page loads, but since it doesn’t output anything or modify the page, you can’t see it.
+You see it’s a plain HTML - file no magic tricks attached. BUT - as a matter of fact a block of JavaScript is being run every time the page loads, but since it doesn’t output anything or modify the page, you can’t see it.
 
 
-##  4. Open the JS Console once again (F12).
+###  4. Open the JS Console once again (F12).
 
 Console is also the place where you can enter and run JavaScript commands to your browser. Lets try it out. You can increase the font size by pressing Ctrl and scrolling the mouse wheel at the same time.
 
 
-##  5. Functions to display data to the user.
+##  2. JavaScript warm up
 
-It is also often used when debugging or developing a program in order to see the values of a variable etc.
-- Type in alert(); What happens?
+### 1. Functions to display data to the user.
+
+Using Developer tools console 
+- Type in document.write("Hello World!); What happens?
 - Type in alert(“Hello World”); What happens?
-- Type in alert(“Hello World”); alert(“Hello World”); alert(“Hello World”); What happens?
+- Type in console.log(“Hello World”); What happens?
 - Type in prompt("Anna nimesi...")
 - Type in confirm(Haluatko jatkaa?")
 Sometimes one has to enter commands which require multiple lines. In these cases, use SHIFT+Enter to change the line without running the command. All the lines will be run consequently.
 
 ```bash
-alert("Hello world!"); // Press Shift+Enter here
-alert("Another hello world"); // Press Shift+Enter here
-alert("Still one more hello world"); // Enter here
+document.write("Hello World!); // Press Shift+Enter here
+alert("Hello World!"); // Press Shift+Enter here
+console.log(“Hello World”) // Enter here
 ```
 Try also typing nonsense to the console. You will see an error message in red.
 
 
-##  6. JS does not have any built-in print functions. You can output data in the following ways
+###  2. JS does not have any built-in print functions. You can output data in the following ways
 
-Writing into an alert box, using window.alert().
-Writing into the HTML output using document.write().
-Writing into the browser console, using console.log().
+Writing into an 
+- alert box, using window.alert(), prompt("") and confirm()
+- the HTML output using document.write().
+- the browser console, using console.log().
+- 
 
 Try also adding the code in the SCRIPT-section of the example1.html -page and then loading the page.
 
-##  7. Defining variables
+###  3. Defining variables
 
 Go back to the console and clear it. Then type in the following commands:
 ```bash
@@ -67,7 +71,7 @@ With console.log -function you can print data to the same Javascript console you
 
 
 
-##  8. Conditionals.
+###  4. Conditionals.
 
 Try out the following snippet of code in your JS console. Play around with it and see what happens. Remember to use Shift+Enter if you have multiple lines of code you want to enter before running the block.
 ```bash
@@ -90,7 +94,7 @@ Have more paths (else if -statements) for different age ranges
 output different messages for each agegroup
 output the message to the console as well
 
-##  9. Loops.
+###  5. Loops.
 
 Try out the following code and play around with it.
 ```bash
@@ -106,7 +110,8 @@ Output the values generated to the console as they are created
 Output the values using document.write, using HTML-tags to format them
 Randomize numers between 1-100
 output the message to the console as well
-##  10. Functions.
+
+###  6. Functions.
 
 Try out the following code and play around with it.
 ```bash
@@ -121,7 +126,7 @@ Modify the code so, that ...
 You will assign values to two variables and then call the function with those variables
 Check if the sum of the two numbers is over 100, if it is, print out (alert) a message to the user
 Output the values and sum using document.write, using HTML-tags to format them
-##  11. Objects.
+###  7. Objects.
 
 Try out the following code and play around with it.
 
@@ -141,7 +146,8 @@ Modify the code so, that it will ...
 have a field for address and telephone.
 have one anonymous method named printInfo, which will print all the information of the person object in the console
 create an array with 4 person objects in it. Then loop through the array and print out the first and lastname for each item
-##  12. Extras.
+
+##  3. Extras.
 
 Write a JavaScript function that will return the given man’s age (input parameter) as dogs age. It is usually considered that dogs age is man’s age multiplied by seven.
 
