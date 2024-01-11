@@ -26,12 +26,14 @@ You see it’s a plain HTML - file no magic tricks attached.BUT - as a matter of
 Console is also the place where you can enter and run JavaScript commands to your browser. Lets try it out. You can increase the font size by pressing Ctrl and scrolling the mouse wheel at the same time.
 
 
-##  5. Alert() -function is one of the easiest way to display data to the user.
+##  5. Functions to display data to the user.
 
 It is also often used when debugging or developing a program in order to see the values of a variable etc.
 - Type in alert(); What happens?
 - Type in alert(“Hello World”); What happens?
 - Type in alert(“Hello World”); alert(“Hello World”); alert(“Hello World”); What happens?
+- Type in prompt("Anna nimesi...")
+- Type in confirm(Haluatko jatkaa?")
 Sometimes one has to enter commands which require multiple lines. In these cases, use SHIFT+Enter to change the line without running the command. All the lines will be run consequently.
 
 ```bash
