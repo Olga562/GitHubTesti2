@@ -24,7 +24,7 @@ of text to the page 50 times.
 
 Create a JavaScript if-statement, which checks if the user is using
 Mozilla browser. If it is, the browser should load
-http://www.mozilla.org\" page. If not, the browser should load some
+"http://www.mozilla.org" page. If not, the browser should load some
 other website. Create simple pages to test the code.
 
 **Exercise 4**
@@ -44,13 +44,9 @@ images using the table index. Images\[0\] for example contains the url:
 
 ```bash
 
-var images =\[
-
-"http://farm4.staticflickr.com/3691/11268502654_f28f05966c_m.jpg\",
-
-\"http://farm1.staticflickr.com/33/45336904_1aef569b30_n.jpg\",
-
-\"http://farm6.staticflickr.com/5211/5384592886_80a512e2c9.jpg\"
-
-\];
+var images =[
+"http://farm4.staticflickr.com/3691/11268502654_f28f05966c_m.jpg",
+"http://farm1.staticflickr.com/33/45336904_1aef569b30_n.jpg",
+"http://farm6.staticflickr.com/5211/5384592886_80a512e2c9.jpg"
+];
 ```
