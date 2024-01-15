@@ -1,8 +1,8 @@
-**Workshop 3: JavaScript Events**
+# Workshop 3: JavaScript Events
 
 In this exercise we will practice the use of JavaScript events. Use the lecture-material as a reference guide side by side with these exercises. It might also be a good idea to save the lines of code you write during the exercises for later use.
 
-**Exercise 1**
+## Exercise 1
 
 Below you will see three buttons. Edit the source code and add an onClick-events to these buttons.
 
@@ -22,12 +22,12 @@ Click me Show table Geolocation
 
 4. The last button should check Geolocation of the user, and output it to the console and to the page. Note: Some browsers might not allow you to do this. Try different browsers if you get errors.
 
-**Exercise 2**
+## Exercise 2
 
 - Add an onMouseOver event on the Heading "Exercise 2" of this page. It should fire when the users mouse is moved over it. Output "Stepped over my a mouse!" on the console.
 - Add another event, which will fire then the mouse leaves the Exercise 2 -heading. This time show an alert window to the user saying: "Bye bye mouse!"
 
-**Exercise 3**
+## Exercise 3
 
 Below you will see a simple form.
 
@@ -42,7 +42,7 @@ Send me
 
 
 
-**Exercise 4**
+## Exercise 4
 
 Add onMouseMove -event to the DIV-element above. When you move mouse over the DIV (rectangle) the program should output the coordinates of your pointer. Try first outputting to the console using console.log.
 

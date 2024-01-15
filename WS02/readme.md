@@ -1,11 +1,11 @@
-**Workshop 2: JavaScript BOM**
+# Workshop 2: JavaScript BOM
 
 In this exercise we will practice the use of BOM. Use the
 lecture-material as a reference guide side by side these exercises. It
 might also be a good idea to save the lines of code you write during the
 exercises for later use.
 
-**Exercise 1**
+## Exercise 1
 
 Add JavaScript commands (or create separate folder and file for your scripts) in the script-tag of this page, which will write
 the following text on the browser page. Use HTML-tags to produce the
@@ -15,26 +15,26 @@ text styles to the page.\
 sharpening my ax.\"**\
 \-- Abraham Lincoln*
 
-**Exercise 2**
+## Exercise 2
 
 Create a JavaScript function called repeatingText. It writes out a line
 of text to the page 50 times.
 
-**Exercise 3**
+## Exercise 3
 
 Create a JavaScript if-statement, which checks if the user is using
 Mozilla browser. If it is, the browser should load
 "http://www.mozilla.org" page. If not, the browser should load some
 other website. Create simple pages to test the code.
 
-**Exercise 4**
+## Exercise 4
 
 Create a simple web page, where JavaScript confirm-dialog will pop out
 asking if the user is a student or not. If the user clicks OK write
 \"Welcome student\" to the page. If the user clicks cancel, write on the
 page: \"Sorry, this page is for students only\".
 
-**Exercise 5**
+## Exercise 5
 
 Use document.write to output an image tag with a real image to the page.
 When you\'re done, try writing a JavaScript function to display a random
