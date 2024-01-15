@@ -249,7 +249,7 @@ tsc
 
  Open the **index.html** file in a web browser.
 
-|<p>Laurea-ammattikorkeakoulu  </p><p>Ratatie 22, 01300 Vantaa</p>|<p>Puhelin (09) 8868 7150</p><p>Faksi (09) 8868 7200</p>|<p>etunimi.sukunimi@laurea.fi      </p><p>www.laurea.fi</p>|Y-tunnus             1046216-1<br>Kotipaikka           Vantaa|
+|<p>Laurea-ammattikorkeakoulu  </p><p>Ratatie 22, 01300 Vantaa</p>|<p>Puhelin (09) 8868 7150</p><p>Faksi (09) 8868 7200</p>|<p>jari.kovalainen@laurea.fi      </p><p>www.laurea.fi</p>|Y-tunnus             1046216-1<br>Kotipaikka           Vantaa|
 | :- | :- | :- | :- |
 |||||
 
