@@ -206,7 +206,7 @@ tsc --init
 body {
    font-family: Arial,
    sans-serif; margin: 20px;
-}
+},
 #app { 
    text-align: center; 
    padding: 20px; 
