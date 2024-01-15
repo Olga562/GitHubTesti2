@@ -1,4 +1,4 @@
-﻿# Workshop HOF: Higher order functions**
+﻿# Workshop HOF: Higher order functions
 
 In this exercise we will practice the use of JavaScript higher order functions (HOF). 
 
@@ -10,15 +10,10 @@ Define users, which is an array of five (5) objects representing users. Each obj
 ```sh
 
 const users = [{ firstName: 'John', lastName: 'Doe', age: 25 },
-
 { firstName: 'Jane', lastName: 'Doe', age: 30 },
-
 { firstName: 'Jack', lastName: 'Doe', age: 35 },
-
 { firstName: 'Jill', lastName: 'Doe', age: 40 },
-
 { firstName: 'Joe', lastName: 'Doe', age: 45 },
-
 ];
 ```
 
@@ -38,15 +33,10 @@ Define users, which is an array of 5 objects representing users. Each object has
 ```sh
 
 const users = [{ firstName: 'John', lastName: 'Doe', age: 25 },
-
 { firstName: 'Jane', lastName: 'Doe', age: 30 },
-
 { firstName: 'Jack', lastName: 'Doe', age: 35 },
-
 { firstName: 'Jill', lastName: 'Doe', age: 40 },
-
 { firstName: 'Joe', lastName: 'Doe', age: 45 },
-
 ];
 ```
 
@@ -65,7 +55,6 @@ In this example, will will exercise Reduce() function.
 
 We have two arguments max and curr in the callback function. Notice we will not pass the second parameter in the reduce() method this time. So, the default value will be the first element in the array, which you need to define first before the callback function definition.
 ```sh
-
 let numbers = [1, 20, 3, 4, 5, 5, 20, 100, 60, 1];
 ```
 
