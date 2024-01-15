@@ -36,9 +36,11 @@ Below you will see a simple form.
 - When the form button is clicked, check if the textarea is empty. Notify the user with appropriate message. HINT: You can access the Textarea using the following command: *document.getElementById("textdata").value*. We will study the forms deeper in Workshops 4 and 5.
 
 ```sh
-
-
-
+        <form>
+            <textarea id="textdata"></textarea><br>
+            <span id="charcount"></span>
+            <button>Send me</button>
+        </form>
 ```
 
 
@@ -49,10 +51,7 @@ Send me
 ## Exercise 4
 
 ```sh
-
-
-
-
+<div id="coordinates"></div>
 ```
 
 Add onMouseMove -event to the DIV-element above. When you move mouse over the DIV (rectangle) the program should output the coordinates of your pointer. Try first outputting to the console using console.log.
