@@ -45,15 +45,15 @@ Open the **tsconfig.json** file in your project and configure it according to yo
 
 ```sh
 {
-`  `"compilerOptions": {
-`    `…
-`    `"target": "es5", */\* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. \*/*
-`    `"rootDir": "./src", */\* Specify the root folder within your source files. \*/*
-`    `"outDir": "./dest", */\* Specify an output folder for all emitted files. \*/*
-`    `"removeComments": true, */\* Disable emitting comments. \*/*
-`    `"strict": true, */\* Enable all strict type-checking options. \*/*
-`    `"noEmitOnError": true, */\* Disable emitting files if any type checking errors are reported. \*/*
-`  `},
+   "compilerOptions": {
+   …
+   "target": "es5", */\* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. \*/*
+   "rootDir": "./src", */\* Specify the root folder within your source files. \*/*
+   "outDir": "./dest", */\* Specify an output folder for all emitted files. \*/*
+   "removeComments": true, */\* Disable emitting comments. \*/*
+   "strict": true, */\* Enable all strict type-checking options. \*/*
+   "noEmitOnError": true, */\* Disable emitting files if any type checking errors are reported. \*/*
+   },
 }
 ```
 
@@ -67,7 +67,7 @@ Write some TypeScript code in your **app.ts** file. For example:
 
 ```sh
 function sayHello(name: string): void {
-`    `console.log(`Hello, ${name}!`);
+   console.log(`Hello, ${name}!`);
 }
 sayHello("World");
 ```
@@ -159,21 +159,21 @@ By following these steps, you should have a basic TypeScript development environ
    1. Initialize your TypeScript project:
 
 ```sh
-*npm init -y*
-*npm install typescript --save-dev* 
-*tsc --init*
+npm init -y
+npm install typescript --save-dev
+tsc --init
 ```
 
 
  **Create TypeScript Configuration:**
    1. Create a **tsconfig.json** file in your project folder with the following content:
 ```sh
-*{ "compilerOptions": {*
-*"target": "es5",*
-*"outDir": "./dist",*
-*"rootDir": "./src",* 
-*"strict": true }* 
-*}*
+{ "compilerOptions": {
+"target": "es5",
+"outDir": "./dist",
+"rootDir": "./src",
+"strict": true }
+}
 ```
  
 
@@ -182,18 +182,18 @@ By following these steps, you should have a basic TypeScript development environ
  **Create HTML File:**
    1. Inside the **src** folder, create an **index.html** file:
    ```sh
-   *<!DOCTYPE html>* 
-*<html lang="en">* 
-*<head>* 
-*<meta charset="UTF-8">* 
-*<meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>TypeScript Web Page</title>* 
-*<link rel="stylesheet" href="styles.css">* 
-*</head>*
-` `*<body>*
-*<div id="app"></div>* 
-*<script src="app.js"></script>* 
-*</body>* 
-*</html>* 
+   <!DOCTYPE html>
+   <html lang="en">
+      <head>
+         <meta charset="UTF-8"> 
+         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>TypeScript Web Page</title> 
+         <link rel="stylesheet" href="styles.css"> 
+      </head>
+      <body>
+         <div id="app"></div> 
+         <script src="app.js"></script> 
+      </body>
+   </html>
 ```
 
 
@@ -203,16 +203,16 @@ By following these steps, you should have a basic TypeScript development environ
 1. Inside the **src** folder, create a **styles.css** file:
 
 ```sh
-*body {* 
-*font-family: Arial,* 
-*sans-serif; margin: 20px;* 
-*}* 
-*#app {* 
-*text-align: center;* 
-*padding: 20px;* 
-*background-color: #f2f2f2;*
-*border-radius: 10px;* 
-*}* 
+body {
+   font-family: Arial,
+   sans-serif; margin: 20px;
+}
+#app { 
+   text-align: center; 
+   padding: 20px; 
+   background-color: #f2f2f2;
+   border-radius: 10px;
+}
 ```
 
 ## **Step 3: TypeScript Code**
@@ -222,13 +222,13 @@ By following these steps, you should have a basic TypeScript development environ
  Inside the **src** folder, create an **app.ts** file:
 ```sh
 
-## *function greet(name: string): string {* 
-## `    `*return `Hello, ${name}!`;* 
-## *}* 
-## *const appElement = document.getElementById('app');* 
-## *if (appElement) {* 
-## `    `*appElement.textContent = greet('TypeScript');*
-*}*
+function greet(name: string): string {
+   return `Hello, ${name}!`;
+}
+const appElement = document.getElementById('app');
+if (appElement) {
+   appElement.textContent = greet('TypeScript');
+}
 ```
 
 ## **Step 4: Compile TypeScript**
@@ -236,8 +236,10 @@ By following these steps, you should have a basic TypeScript development environ
  **Compile TypeScript:**
 
  Run the following command to compile your TypeScript code:
+```sh
+tsc
+```
 
-*tsc* 
 
  This will generate a **dist** folder with the compiled JavaScript file (**app.js**).
 
