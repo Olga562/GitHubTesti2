@@ -7,6 +7,7 @@ In this exercise we will practice the use of JavaScript higher order functions (
 In this example, will will exercise Map() function. 
 
 Define users, which is an array of five (5) objects representing users. Each object has three properties: firstName, lastName, and age. Please ensure that 2 of the users are younger than 30 years. 
+```sh
 
 const users = [{ firstName: 'John', lastName: 'Doe', age: 25 },
 
@@ -19,6 +20,7 @@ const users = [{ firstName: 'John', lastName: 'Doe', age: 25 },
 { firstName: 'Joe', lastName: 'Doe', age: 45 },
 
 ];
+```
 
 We are mapping over each user using the map() method to extract the properties firstName and lastName.
 
@@ -33,6 +35,7 @@ Log the new array to console.
 In this example, will will exercise Filter() function. 
 
 Define users, which is an array of 5 objects representing users. Each object has three properties: firstName, lastName, and age. Please ensure that 2 of the users are younger than 30 years. 
+```sh
 
 const users = [{ firstName: 'John', lastName: 'Doe', age: 25 },
 
@@ -45,6 +48,7 @@ const users = [{ firstName: 'John', lastName: 'Doe', age: 25 },
 { firstName: 'Joe', lastName: 'Doe', age: 45 },
 
 ];
+```
 
 Filter is called on the users array and it applies a callback function to each element in the array.
 
@@ -60,8 +64,10 @@ In this example, will will exercise Reduce() function.
 
 
 We have two arguments max and curr in the callback function. Notice we will not pass the second parameter in the reduce() method this time. So, the default value will be the first element in the array, which you need to define first before the callback function definition.
+```sh
 
 let numbers = [1, 20, 3, 4, 5, 5, 20, 100, 60, 1];
+```
 
 The callback function first checks if the current element curr is greater than the current maximum value max. If it is, it updates the value of max to be the current element. If it is not, max is not updated. Finally, the function returns the value of max.
 
