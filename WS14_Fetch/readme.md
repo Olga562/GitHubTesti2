@@ -49,51 +49,29 @@
 
 ```sh
 // Simulating fetching user data from a server
-
 function getUserData(userId, callback) {
+// Simulated asynchronous operation (e.g., fetching data from a server)
 
-`    `// Simulated asynchronous operation (e.g., fetching data from a server)
-
-`    `setTimeout(() => {
-
-`        `const userData = {
-
-`            `id: userId,
-
-`            `username: `user${userId}`,
-
-`            `email: `user${userId}@example.com`
-
-`        `};
-
-`        `// Invoke the callback function with the fetched data
-
-`        `callback(null, userData); // Pass null for the error parameter to indicate success
-
-`    `}, 1000); // Simulating a delay of 1 second
-
+    setTimeout(() => {
+        const userData = {
+            id: userId,
+            username: `user${userId}`,
+            email: `user${userId}@example.com`
+        };
+// Invoke the callback function with the fetched data
+        callback(null, userData); // Pass null for the error parameter to indicate success
+    }, 1000); // Simulating a delay of 1 second
 }
-
 // Callback function to handle the fetched user data
-
 function handleUserData(error, data) {
-
-`    `if (error) {
-
-`        `console.error('Error fetching user data:', error);
-
-`    `} else {
-
-`        `console.log('Fetched user data:', data);
-
-`    `}
-
+    if (error) {
+        console.error('Error fetching user data:', error);
+    } else {
+        console.log('Fetched user data:', data);
+    }
 }
-
 // Example usage: Fetch user data with the provided userId and handle the result using the callback
-
 getUserData(1, handleUserData);
-
 ```
 
 In this example:
