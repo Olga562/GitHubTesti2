@@ -46,6 +46,8 @@
 
 ### Appendix 1. Basic callback function**
 
+
+```sh
 // Simulating fetching user data from a server
 
 function getUserData(userId, callback) {
@@ -92,6 +94,7 @@ function handleUserData(error, data) {
 
 getUserData(1, handleUserData);
 
+```
 
 In this example:
 
