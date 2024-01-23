@@ -8,7 +8,7 @@ async function getWeather() {
     try {
         //        const response = await fetch('https://api.openweathermap.org/data/2.5/weather?q=Espoo&appid=YOUR_API_KEY&units=metric');
 
-        const response = await fetch('https://api.openweathermap.org/data/2.5/weather?q=Espoo&appid=2fb472ea13a72f1fe8d284ff8242bb43&units=metric');
+        const response = await fetch('https://api.openweathermap.org/data/2.5/weather?q=Espoo&appid=YOUR_API_KEY&units=metric');
 
         const data = await response.json();
         console.log('Weather data:', data);
