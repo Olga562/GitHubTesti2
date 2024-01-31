@@ -45,19 +45,15 @@ Add onchange -events to following checkboxes.
 -   When the mouse is moved on top of the image, a colored border should appear surrounding it. On mouse out, border should disappear
 -   When you have accomplished the above, change the image (id="carimage") below based on the users choice on the pulldown menu below. Find appropriate images from the web.
 
-Select a new car from the list.
 
-  BMW Audi Mercedes Volvo
 
 <details>
-<summary>Heading</summary>
+<summary>Select a new car from the list.</summary>
 <ul>
-<li> markdown list 1</li>
-<ul>
-<li> nested list 1</li>
-<li> nested list 2</li>
-</ul>
-<li> markdown list 2</li>
+<li> BMW </li>
+<li> Audi </li>
+<li> Mersu </li>
+<li> Volvo</li>
 </ul>
 </details>
 
