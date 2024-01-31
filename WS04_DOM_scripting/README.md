@@ -1,6 +1,5 @@
-# WS04
 
-Workshop 4: DOM Scripting
+# Workshop 4: DOM Scripting
 =========================
 
 * * * * *
@@ -9,7 +8,7 @@ In this exercise we will practice the art of DOM Scripting with JavaScript. Use 
 
 * * * * *
 
-Exercise 1: Basic DOM Manipulation
+## Exercise 1: Basic DOM Manipulation
 ----------------------------------
 
  Below you will see three buttons. Edit the source code and add an onClick-events to these buttons. Use Developer Console to find the
@@ -24,14 +23,14 @@ Button 1 Button 2 Button 3
 
 * * * * *
 
-Exercise 2: DOM Traversing using ID's and classes
+## Exercise 2: DOM Traversing using ID's and classes
 -------------------------------------------------
 
 Add onchange -events to following checkboxes.
 
- Hide me\
- Show me\
- Surprise
+[ ] Hide me\
+[ ] Show me\
+[ ] Surprise
 
 -   First checkbox: Find out which element has been described with the id "me". Change the visibility (display value) of the element to none. What happens?
 -   Second checkbox should return the visibility of the element to a normal state (block).
@@ -39,7 +38,7 @@ Add onchange -events to following checkboxes.
 
 * * * * *
 
-Exercise 3: Images and pulldowns
+## Exercise 3: Images and pulldowns
 --------------------------------
 
 -   Write a JavaScript function, which will fire when the pulldown menu item is changed. Show the users choice using alert -box.
@@ -54,7 +53,7 @@ Select a new car from the list.
 
 * * * * *
 
-Exercise 4: Moving things around
+## Exercise 4: Moving things around
 --------------------------------
 
 -   You can do neat things by editing CSS-rules via JavaScript. See the examples in lecture slides. Then try these:
@@ -66,7 +65,7 @@ Exercise 4: Moving things around
 
 * * * * *
 
-Exercise 5: Tables
+## Exercise 5: Tables
 ------------------
 
 -   Write a JavaScript function to add rows to a table. Rows can contain preset values.
@@ -86,7 +85,7 @@ Salary:
 
 * * * * *
 
-Bonus exercises for the enthusiastics
+## Bonus exercises for the enthusiastics
 -------------------------------------
 
 -   Write a loop, which goes through all the LI tags in the page and replaces them with a <strong> tagged, red text saying "Replaced".
