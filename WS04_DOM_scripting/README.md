@@ -28,9 +28,9 @@ Button 1 Button 2 Button 3
 
 Add onchange -events to following checkboxes.
 
-[ ] Hide me\
-[ ] Show me\
-[ ] Surprise
+- [ ] Hide me
+- [ ] Show me
+- [ ] Surprise
 
 -   First checkbox: Find out which element has been described with the id "me". Change the visibility (display value) of the element to none. What happens?
 -   Second checkbox should return the visibility of the element to a normal state (block).
