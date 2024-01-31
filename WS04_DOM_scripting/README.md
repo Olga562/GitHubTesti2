@@ -66,7 +66,7 @@ Add onchange -events to following checkboxes.
 
 -   You can do neat things by editing CSS-rules via JavaScript. See the examples in lecture slides. Then try these:
 
-    1.  Move!Select the div with an id "carimage" and move it 200px left and 500px down
+    1.  [<kbd> <br>Move <br> </kbd>] Select the div with an id "carimage" and move it 200px left and 500px down
     2.  Animate Write a funtion doMove() which will move the image across the screen, or even better: back and forth on the screen. The Interval required has already been added to the onclick -event of the list item.
     3.  Fade out! Wite a function fadeOut() which will slowly decrease the opacity of the image from 1.0 to 0 making it fade out. The Interval required has already been added to the onclick -event of the list item
     4.  Disappear!Finally, write JavaScript which will remove the image from the page
