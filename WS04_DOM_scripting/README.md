@@ -66,10 +66,10 @@ Add onchange -events to following checkboxes.
 
 -   You can do neat things by editing CSS-rules via JavaScript. See the examples in lecture slides. Then try these:
 
-      [<kbd> <br>Move <br> </kbd>] Select the div with an id "carimage" and move it 200px left and 500px down
-      [<kbd> <br>Animate <br> </kbd>] Write a funtion doMove() which will move the image across the screen, or even better: back and forth on the screen. The Interval required has already been added to the onclick -event of the list item.
-      [<kbd> <br>Fade Out <br> </kbd>] Wite a function fadeOut() which will slowly decrease the opacity of the image from 1.0 to 0 making it fade out. The Interval required has already been added to the onclick -event of the list item
-      [<kbd> <br>Disappear <br> </kbd>] Finally, write JavaScript which will remove the image from the page
+      <kbd> <br>Move <br> </kbd> Select the div with an id "carimage" and move it 200px left and 500px down <br>
+      <kbd> <br>Animate <br> </kbd> Write a funtion doMove() which will move the image across the screen, or even better: back and forth on the screen. The Interval required has already been added to the onclick -event of the list item. <br    >
+      <kbd> <br>Fade Out <br> </kbd> Wite a function fadeOut() which will slowly decrease the opacity of the image from 1.0 to 0 making it fade out. The Interval required has already been added to the onclick -event of the list item <br>
+      <kbd> <br>Disappear <br> </kbd> Finally, write JavaScript which will remove the image from the page
 
 * * * * *
 
