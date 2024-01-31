@@ -7,7 +7,7 @@ exercises for later use.
 
 ## Exercise 1
 
-Add JavaScript commands (or create separate folder and file for your scripts) in the script-tag of this page, which will write
+Add JavaScript commands (or create separate folder and file for your scripts) in the script-tag of this (Workshop02.html) page, which will write
 the following text on the browser page. Use HTML-tags to produce the
 text styles to the page.\
 \
