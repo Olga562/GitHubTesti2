@@ -1,29 +1,68 @@
-// shopping1.js
+// shopping.js
+// This script calculates an order total.
+
 // Function called when the form is submitted.
+// Function performs the calculation and returns false.
+function calculate() {
+    'use strict';
 
-function validateFields() {
+    // For storing the order total:
+    var total;
 
-    var retVal = true;
-    var email = document.getElementById("email");
-    var comments = document.forms.myForm.comment;
-    let feed1 = document.getElementById("feedback1");
-    if (email.value == null || email.value.length < 6 || email.value.length > 15 || email.value.indexOf("@") < 0) {
-        email.parentNode.parentNode.classList.add("error");
-        feed1.innerHTML = "Email length is not correct or @-sign is missing";
-        retVal = false;
+    // Get references to the form values:
+    var quantity = document.getElementById('quantity').value;
+    var price = document.getElementById('price').value;
+    var tax = document.getElementById('tax').value;
+    var discount = document.getElementById('discount').value;
+    var shipping = document.getElementById('shipping').value;
+
+    // Add validation here later!
+
+    // Calculate the initial total:
+    total = quantity * price;
+    console.log("total before tax: " + total);
+
+    // Make the tax rate easier to use:
+    tax = tax / 100;
+    tax = tax + 1;
+
+    // Factor in the tax:
+    total = total * tax;
+    console.log("total after tax: " + total);
+
+    // Factor in the discount:
+    if (quantity > 100) {
+        total = total - (2 * discount);
     } else {
-        document.getElementById("feedback1").innerHTML = "";
-        email.parentNode.parentNode.classList.remove("error");
+
+        total = total - discount;
     }
-    if (comments.value == null || comments.value.length < 1) {
-        comments.parentNode.classList.add("error");
-        document.getElementById("feedback2").innerHTML = "Comments field cannot be empty";
-        retVal = false;
-    } else {
-        if (retVal) {
-            comments.parentNode.classList.remove("error");
-            let text = comments.value.substring(0, 49);
-            alert("Comments:\n" + text + "\n\nemail:" + email.value);
-        }
-    }
-    return retVal;
+    total = total + (1.0 * shipping);
+    console.log("total after discount: " + total);
+
+    // Format the total to two decimal places:
+    total = total.toFixed(2);
+
+    // Display the total:
+    document.getElementById('total').value = total;
+
+    // Return false to prevent submission:
+    return false;
+
+} // End of calculate() function.
+
+// Function called when the window has been loaded.
+// Function needs to add an event listener to the form.
+function init() {
+    'use strict';
+
+    // Add an event listener to the form:
+    var theForm = document.getElementById('theForm');
+    /* if(theForm.addEventListener){
+        theForm.addEventListener("submit", code ,false);
+    } */
+
+} // End of init() function.
+
+// Assign an event listener to the window's load event:
+window.onload = init;
