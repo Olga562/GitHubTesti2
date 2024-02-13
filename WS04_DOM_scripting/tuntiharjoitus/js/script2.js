@@ -4,10 +4,14 @@ var abraNappi = document.getElementById('nappi2');
 
 function sayMagicWord(event) {
     if (event.target === prestoNappi) {
+        document.body.style.backgroundColor = 'red';
         alert('Change-o!');
     } else if (event.target === abraNappi) {
-        alert('Cadabra!');
+        document.body.style.backgroundColor = 'blue';
+        alert('Abracadabra!');
+
     } else {
+        document.body.style.backgroundColor = 'green';
         alert('Shazam!');
     }
     console.log({ event }); // for debugging
