@@ -16,15 +16,22 @@ b) Enhance the code and write if-statements to check the following: the length o
 
 c) Should an error occur, highlight the erroneous field and provide some feedback to the user. Preferably by displaying some text message on the page, next to the input field. See the lecture slides for demo.
 
-<form onsubmit="">
+<form>
+    <div class="no-border">
+        <label>Email address:<br>
+            <input type="text" name="email">
+        </label>
+    </div>
+    <div class="no-border">
+        <label>
+            Comment:<br>
+        </label>
+        <textarea name="comment"></textarea>
+    </div>
+    <br>
+    <input type="submit" value="Send">
+</form>
 
-<div class="no-border"><label>Email address:  
-<input type="text" name="email"></label> </div>
-
-<div class="no-border"><label>Comment:  
-</label><textarea name="comment"></textarea></div>
-
-<input type="submit" value="Send"></form>
 
 * * *
 
