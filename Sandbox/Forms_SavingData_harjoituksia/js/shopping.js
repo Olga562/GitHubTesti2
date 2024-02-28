@@ -46,14 +46,41 @@ function calculate() {
     // Format the total to two decimal places:
     total = total.toFixed(2);
 
+    const tiedot = {
+        quantity: quantity,
+        price: price,
+        tax: tax,
+        discount: discount,
+        shipping: shipping,
+        total: total
+    };
+    talleta(tiedot);
     // Display the total:
     document.getElementById('total').value = total;
 
-    // Return false to prevent submission:
-    return false;
-
 } // End of calculate() function.
+// Function to save the data to local storage
+function talleta(tiedot) {
+    // check whether the 'ostokset' data item is stored in web Storage
+    if (localStorage.getItem("ostokset")) {
+        // If it is, add the new data to the existing array
+        console.log("tiedot löytyy");
+        // get the existing data
+        const ostokset = JSON.parse(localStorage.getItem("ostokset"));
+        // add the new data to the existing data
+        ostokset.push(tiedot);¨
+        // store the updated data in web storage
+        localStorage.setItem("ostokset", JSON.stringify(ostokset));
 
+    } else {
+        // if not, create a new array with the new data
+        console.log("tiedot puuttuu");
+        const ostokset = [tiedot];
+        // store the new data in web storage
+        localStorage.setItem("ostokset", JSON.stringify(ostokset));
+
+    }
+}
 // Function called when the window has been loaded. Function adds an event listener to the form.
 function init() {
     'use strict';
