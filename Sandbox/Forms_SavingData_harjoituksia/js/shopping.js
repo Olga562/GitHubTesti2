@@ -4,7 +4,7 @@ function calculate() {
     'use strict';
 
     // For storing the order total:
-    var total;
+    let total;
 
     // Get references from the form values:
     var quantity = document.getElementById('quantity').value;
@@ -38,7 +38,7 @@ function calculate() {
     else {
         total = total - discount;
     }
-    // add the shipping cost to the total pultiply by 1.0 to convert the string to a number
+    // add the shipping cost to the total multiply by 1.0 to convert the string to a number
     total = total + (1.0 * shipping);
     // Log the total after discount to the console:
     console.log("total after discount: " + total);
