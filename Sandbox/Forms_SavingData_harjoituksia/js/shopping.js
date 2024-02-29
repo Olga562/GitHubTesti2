@@ -68,7 +68,7 @@ function talleta(tiedot) {
         // get the existing data
         const ostokset = JSON.parse(localStorage.getItem("ostokset"));
         // add the new data to the existing data
-        ostokset.push(tiedot);¨
+        ostokset.push(tiedot);
         // store the updated data in web storage
         localStorage.setItem("ostokset", JSON.stringify(ostokset));
 
@@ -81,14 +81,64 @@ function talleta(tiedot) {
 
     }
 }
+
+function nayta() {
+    // check whether the 'ostokset' data item is stored in web Storage
+    if (localStorage.getItem("ostokset")) {
+        // If it is, display the data
+        const ostokset = JSON.parse(localStorage.getItem("ostokset"));
+        console.log(ostokset);
+        // create a new table element
+        const table = document.createElement("table");
+        // create a header row
+        const headerRow = document.createElement("tr");
+        // create the table headers
+        const headers = ["Quantity", "Price", "Tax", "Discount", "Shipping", "Total"];
+        // loop through the headers array
+        for (let i = 0; i < headers.length; i++) {
+            // create a new table header
+            const header = document.createElement("th");
+            // set the header's text content to the current header
+            header.textContent = headers[i];
+            // append the header to the header row
+            headerRow.appendChild(header);
+        }
+        // append the header row to the table
+        table.appendChild(headerRow);
+        // loop through the data
+        for (let i = 0; i < ostokset.length; i++) {
+            // create a new row
+            const row = document.createElement("tr");
+            // loop through the data for the current item
+            for (const key in ostokset[i]) {
+                // create a new cell
+                const cell = document.createElement("td");
+                // set the cell's text content to the current item's value
+                cell.textContent = ostokset[i][key];
+                // append the cell to the row
+                row.appendChild(cell);
+            }
+            // append the row to the table
+            table.appendChild(row);
+            console.log(table);
+        }
+        const taulu = document.getElementById("taulu");
+
+        taulu.appendChild(table);
+    }
+
+}
+
+
 // Function called when the window has been loaded. Function adds an event listener to the form.
 function init() {
     'use strict';
     // Add an event listener to the form:
-    var theForm = document.getElementById('submit-calculate');
-    theForm.addEventListener('click', calculate, false);
+    const theForm = document.getElementById('submit-calculate');
+    theForm.addEventListener('click', calculate);
     console.log("form event listener added");
-
+    const show = document.getElementById('sshow');
+    show.addEventListener('click', nayta);
 }
 
 // Assign an event listener to the window's load event:
