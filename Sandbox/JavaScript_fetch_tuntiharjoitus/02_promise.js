@@ -10,7 +10,7 @@ const divi = document.getElementById('myDiv')
 // Creating a Promise
 const myPromise = new Promise((resolve, reject) => {
     // Asynchronous operation or any logic
-    const isSuccess = false; // Simulating success
+    const isSuccess = true; // Simulating success
 
     // Simulating an asynchronous operation (e.g., fetching data from a server)
     setTimeout(() => {

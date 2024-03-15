@@ -1,18 +1,20 @@
 document.getElementById('myButton').addEventListener('click', function () {
     console.log('Button clicked');
     // Calling the example async function
-    display();
+    fetchDataAndDisplay();
 });
 
 const divi = document.getElementById('myDiv')
 
 // Async function using Await with Fetch
-const display = () => { fetchDataAndDisplay() };
+const display = () => {
+    fetchDataAndDisplay()
+};
 
 async function fetchData() {
     try {
         // Using the await keyword to pause execution until the Promise is resolved
-        const response = await fetch('https://jsonplaceholder.typicode.com/posts/2');
+        const response = await fetch('https://jsonplaceholder.typicode.com/post/4');
 
         // Check if the request was successful (status code 200-299)
         if (!response.ok) {

@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // määritellään displayCustomerInfo-funktio, joka käsittelee datan ja tulostaa sen sivulle
     function displayCustomerInfo(quoteData) {
         // käydään läpi quoteData-objektin quotes-taulukko ja tulostetaan jokainen quote ja sen author  
+        console.log(quoteData);
         for (let i = 0; i < quoteData.quotes.length; i++) {
             const id = quoteData.quotes[i].author;
             const quote = quoteData.quotes[i].quote;
