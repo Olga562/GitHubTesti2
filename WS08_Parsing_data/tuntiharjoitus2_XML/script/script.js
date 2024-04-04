@@ -30,9 +30,10 @@ function loadAndParseNews(filename) {
             var item, feedlink, name, description, content = '';
             for (i = 0; i < items.length; i++) {
                 feedlink = items[i].getElementsByTagName('link').item(0).firstChild.nodeValue;
+                //        console.log(items[i].getElementsByTagName('link').item(0).firstChild.nodeValue);
                 name = items[i].getElementsByTagName('title').item(0).firstChild.nodeValue;
                 description = items[i].getElementsByTagName('description').item(0).firstChild.nodeValue;
-                console.log(description);
+                //console.log(description);
                 item = '<li><a href="' + feedlink + '">' + name + '</a>    ' + description + ' </li>';
                 content += item;
             }

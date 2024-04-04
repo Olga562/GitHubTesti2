@@ -38,6 +38,7 @@ function tulostaasiakkaat(asiakkaat) {
         txt += '<tr><td>' + nimi + '</td><td>' + puhelin + '</td><td>' + email + '</td><td>' + city + '</td><td></tr>';
     }
     txt += '</tbody></table>';
+    console.log(txt);
     asiakaslista.innerHTML = txt;
 
 }
