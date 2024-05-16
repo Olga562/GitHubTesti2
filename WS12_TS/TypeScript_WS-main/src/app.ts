@@ -48,6 +48,7 @@ enum DaysOfWeek {
 let anyValue: any = "This is a string.";
 let stringLength: number = (anyValue as string).length;
 
+
 // Test the code
 console.log(addNumbers(5, 7));
 printString("TypeScript is awesome!");

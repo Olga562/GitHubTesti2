@@ -10,9 +10,9 @@ To make things interesting, do these exercises on the Demosite -page, which will
 
 In order to get jQuery-functions available to your webpage, you need to add the jQuery library as part of your page. This can be done by adding a script tag, which will reference to jQuery online or to a local file.
 
-<pre>   
+```html  
         <script  src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="crossorigin="anonymous"></script>
-        </pre>
+```
 
 Go Ahead and add the line above to this pages HTML-code. Then reload the page. You can make sure that jQuery is up and running by typing $ at the console.
 
