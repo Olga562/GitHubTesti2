@@ -1,4 +1,4 @@
-# Project Title and authors
+# Project Title 
 The name of the Project and all authors involved
 
 ## Demo link:
