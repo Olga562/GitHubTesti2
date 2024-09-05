@@ -36,12 +36,14 @@ page: \"Sorry, this page is for students only\".
 
 ## Exercise 5
 
-Use document.write to output an image tag with a real image to the page.
-When you\'re done, try writing a JavaScript function to display a random
-image from the following list of images. HINT: You can access individual
+Use document.write to output an image tag with a real image from a JavaScript table defined below to the page.
+HINT: You can access individual
 images using the table index. Images\[0\] for example contains the url:
 \"<http://farm4.staticflickr.com/3691/11268502654_f28f05966c_m.jpg>\".
 
+When you\'re done, try writing a JavaScript function to display a random
+image from the following list of images. 
+HINT: You can generate a random integer between desired range using following code: ```bash Math.floor(Math.random() * max);```
 ```bash
 
 var images =[
