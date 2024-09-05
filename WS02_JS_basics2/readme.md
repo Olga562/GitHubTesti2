@@ -43,7 +43,7 @@ images using the table index. Images\[0\] for example contains the url:
 
 When you\'re done, try writing a JavaScript function to display a random
 image from the following list of images. 
-HINT: You can generate a random integer between desired range using following code: ```Math.floor(Math.random() * max);```
+HINT: You can generate a random integer between desired range  (for example 5) using following code: ```Math.floor(Math.random() * 5);```
 ```bash
 
 var images =[
