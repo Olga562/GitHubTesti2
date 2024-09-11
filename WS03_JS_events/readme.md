@@ -57,7 +57,7 @@ Send me
 
 Add onMouseMove -event to the DIV-element above. When you move mouse over the DIV (rectangle) the program should output the coordinates of your pointer. Try first outputting to the console using console.log.
 
-When the program is working, you can try outputting the text on the H2 element with an id "coords" the box
+When the program is working, you can try outputting the text on the H2 element with an id "coords" the box. You can read more about [howto get mouse coordinates from here](https://www.w3schools.com/jsref/event_clientx.asp).
 
 HINT: You need to use document.getElementById("coordinates").innerHTML to achieve this.
 
