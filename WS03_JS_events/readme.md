@@ -9,7 +9,7 @@ Below you will see three buttons. Edit the source code and add an onClick-events
 Click me Show table Geolocation
 
 1. The first button should open an alert-button, which will say "You clicked me!"
-1. When you see the button working, add the current date after the text by using the Date() -function.
+1. When you see the button working, add the current date after the text by using the [Date() -function](https://www.w3schools.com/js/js_date_methods.asp).
 1. The second button should call a function called showTable()". ShowTable function should output a simple HTML-table (below) to the page. Use document.write to print data. Feel free to modify the data on the table.
 
 |**Name**|**Position**|**Salary**|
