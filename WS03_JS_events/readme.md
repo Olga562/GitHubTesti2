@@ -20,7 +20,8 @@ Click me Show table Geolocation
 |Cedric Kelly|Senior Javascript Developer|$433,060|
 |Airi Satou|Accountant|$162,700|
 
-4. The last button should check Geolocation of the user, and output it to the console and to the page. Note: Some browsers might not allow you to do this. Try different browsers if you get errors.
+4. The last button should check [Geolocation](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API/Using_the_Geolocation_API) of the user, and output it to the console and to the page. Note: Some browsers might not allow you to do this. Try different browsers if you get errors.
+  Finally redirect the browser to a Google Maps page with the coordinates you just read? HINT. You can open Google Maps with spesific coordinates using a link like this: ```https://www.google.com/maps?q=LATITUDE,LONGITUDE"```  
 
 ## Exercise 2
 
