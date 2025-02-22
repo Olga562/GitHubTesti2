@@ -1,4 +1,69 @@
 // shopping.js
+
+//exercise 1
+function checkInput(){
+    
+    var x = document.getElementById("email");
+    var y = document.getElementById("comment");
+
+    if(x.value.length < 6 || x.value.length > 15 || x.value.indexOf("@") < 0){
+        x.style.borderColor = "red";
+        const addi = document.createElement("span");
+        addi.innerHTML = "Wrong input!";
+        x.parentNode.appendChild(addi);
+        return false;
+    }else if(y.value.length > 50){
+        y.style.borderColor = " red";
+        const addi1 = document.createElement("span");
+        addi1.innerHTML = "Way to long!";
+        y.parentNode.appendChild(addi1);
+        return false;
+    }else{
+        alert(x.value + " kirjoitti " + y.value);
+        }
+        
+            
+        }
+
+        // exercise 2
+
+        document.getElementById("submit").addEventListener("click", function(event){
+            event.preventDefault();
+            let type = document.getElementById("type").value;
+            let years = parseInt(document.getElementById("years").value);
+
+            let price = 0;
+
+            if(type == "basic"){
+                price = 10;
+            }else if(type == "premium"){
+                price = 15;
+            }else if(type == "gold"){
+                price = 20;
+            }else if(type =="platinum"){
+                price = 25;
+            }
+
+            let totalCost = price * years;
+            let message = "";
+
+            if(years > 2){
+                totalCost *= 0.8;
+                message = "You got a 20% discount!";
+            }
+            if(years >= 5){
+                totalCost -= 5;
+                message += " Plus you got an extra 5€ discount!";
+            }
+
+            document.getElementById("cost").value = `$${totalCost.toFixed(2)}`;
+            document.getElementById("discountMessage").innerText = message;
+        })
+   
+    
+
+    
+// exercise 3
 // This script calculates an order total.
 
 // Function called when the form is submitted.
@@ -10,11 +75,11 @@ function calculate() {
     var total;
 
     // Get references to the form values:
-    var quantity = document.getElementById('quantity').value;
-    var price = document.getElementById('price').value;
-    var tax = document.getElementById('tax').value;
-    var discount = document.getElementById('discount').value;
-    var shipping = document.getElementById('shipping').value;
+    var quantity = parseInt(document.getElementById('quantity').value);
+    var price = parseFloat(document.getElementById('price').value);
+    var tax = parseFloat(document.getElementById('tax').value);
+    var discount = parseFloat(ocument.getElementById('discount').value);
+    var shipping = parseFloat(document.getElementById('shipping').value);
 
     // Add validation here later!
 
@@ -61,8 +126,33 @@ function init() {
     /* if(theForm.addEventListener){
         theForm.addEventListener("submit", code ,false);
     } */
+   theForm.addEventListener("submit", function(event){
+    event.preventDefault();
+    checkMethod();
+   })
+
 
 } // End of init() function.
 
 // Assign an event listener to the window's load event:
 window.onload = init;
+
+function showContactField(){
+    document.getElementById('emailField').style.display = 'none';
+    document.getElementById('phoneField').style.display = 'none';
+    document.getElementById('smsField').style.display = 'none';
+
+    var contactMethod = document.getElementById("contactMethod").value;
+
+    if(contactMethod == "email"){
+        document.getElementById("emailField").style.display = "block";
+    }else if(contactMethod=="phone"){
+        document.getElementById("phoneField").style.display = "block";
+    }else if(contactMethod == "sms"){
+        document.getElementById("smsField").style.display = "block";
+    }
+}
+
+function checkMethod(){
+
+}

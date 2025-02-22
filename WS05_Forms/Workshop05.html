@@ -27,17 +27,17 @@
     <p data-line="12">c) Should an error occur, highlight the erroneous field and provide some feedback to the user.
         Preferably by displaying some text message on the page, next to the input field. See the lecture slides for
         demo.</p>
-    <form onsubmit="">
+    <form name = "myForm" id = "contactForm" onsubmit="checkInput()">
         <div class="no-border">
             <label>Email address:<br>
-                <input type="text" name="email">
+                <input type="text" name="email" id = "email">
             </label>
         </div>
         <div class="no-border">
             <label>
                 Comment:<br>
             </label>
-            <textarea name="comment"></textarea>
+            <textarea name="comment" id = "comment"></textarea>
         </div>
         <br>
         <input type="submit" value="Send">
@@ -76,9 +76,10 @@
                 <label for="cost">Cost</label>
                 <input type="text" name="cost" id="cost" disabled>
             </div>
-            <input type="submit" value="Calculate" id="submit">
+            <button type="button" id="submit">Calculate</button>
         </fieldset>
     </form>
+    <p id = "discountMessage"></p>
 
     <p data-line="20">&nbsp;</p>
     <hr />
@@ -112,6 +113,10 @@
             <input type="text" name="discount" id="discount" value="0.00" required>
         </div>
         <div>
+            <label for="shipping">Shipping</label>
+            <input type="text" name="shipping" id="shipping" value="0.00" required>
+        </div>
+        <div>
             <label for="total">Total</label>
             <input type="text" name="total" id="total" value="0.00">
         </div>
@@ -132,6 +137,42 @@
                 regarding on the selected contact method.</p>
         </li>
     </ul>
+
+    <form name = "myNewForm" id = "theForm" onsubmit="checkMethod()">
+        <div class = "no-border">
+            <label for = "contactMethod">Preffered Contact Method: <br>
+                <select name="contactMethod" id ="contactMethod" onchange="showContactField()">
+                    <option value="email">Email</option>
+                    <option value="phone">Phone</option>
+                    <option value="sms">SMS</option>
+                </select>
+
+            </label>
+        </div>
+        <div class="no-border" id="emailField" style="display: none">
+            <label>Email address:<br>
+                <input type="text" name="email" id = "email">
+            </label>
+        </div>
+        <div class="no-border" id="phoneField" style="display: none">
+            <label>Phone number:<br>
+                <input type="text" name="phone" id = "phone">
+            </label>
+        </div>
+        <div class="no-border" id="smsField" style="display: none">
+            <label>Phone number:<br>
+                <input type="text" name="sms" id = "sms">
+            </label>
+        </div>
+        <div class="no-border">
+            <label>
+                Comment:<br>
+            </label>
+            <textarea name="comment" id = "comment"></textarea>
+        </div>
+        <br>
+        <input type="submit" value="Send">
+    </form>
     <script src="js/shopping.js"></script>
 </body>
 
