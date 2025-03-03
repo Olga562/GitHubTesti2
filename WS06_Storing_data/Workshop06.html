@@ -5,7 +5,7 @@
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="css/styles.css">
 	</head>
-	<body class="ws6" onload="">
+	<body class="ws6" onload="readData();readData2()">
 		<h1>Workshop 6: Using Localstorage</h1>
 		<hr />
 		<h2>Exercise 1: Saving the entered data</h2>
@@ -53,6 +53,27 @@
 			happens, when you close the browser. You can utilize developer tools to study the data (F12, 
 			select Application tab, then LocalStorage on the left).</p>
 		</div>
+		<div>
+			<label for="destination">Destination:</label>
+			<input type="text" name="textfield" id="destination2">
+		</div>
+		<div>
+			<label for="arrival">Arrival Date:</label>
+			<input type="text" name="textfield" id="arrival2">
+		</div>
+		<div id="services2" class="border">
+			<p>Services:</p>
+			<div><label><input type="checkbox" name="CheckboxGroup1" value="Internet" id="CheckboxGroup1_0,2">Internet</label></div>
+			<div><label><input type="checkbox" name="CheckboxGroup1" value="AC" id="CheckboxGroup1_1,2">Air Conditioning</label></div>
+			<div><label><input type="checkbox" name="CheckboxGroup1" value="minibar" id="CheckboxGroup1_2,2">Minibar</label></div>
+			<div><label><input type="checkbox" name="CheckboxGroup1" value="car" id="CheckboxGroup1_3,2">Car rent</label></div>
+			<div><label><input type="checkbox" name="CheckboxGroup1" value="sauna" id="CheckboxGroup1_4,2">Sauna</label></div>
+		</div>	
+		<div class="clear">
+			<p>
+			  <input type="button" name="button" id="button2" value="Reserve" onclick="getData2()">
+			</p>
+		</div>
 		<hr/>
 		<div>
 			<h2>Exercise 4:</h2>
@@ -60,5 +81,66 @@
 			example, would remember the data that you have entered between browser refresh and even 
 			restarts.</p>
 		</div>
+
+		<script>
+			// Tehtävä 1
+			function getData(){
+				let destination = document.querySelector("#destination").value;
+				let arrDate = document.querySelector("#arrival").value;
+
+				let selectedService = [];
+				document.querySelectorAll('#services input[type="checkbox"]:checked').forEach((checkbox) =>{
+					selectedService.push(checkbox.value);
+				});
+				localStorage.setItem("Stop", destination)
+				localStorage.setItem("Date", arrDate)
+				localStorage.setItem("Services", JSON.stringify(selectedService))
+			}
+			// tehtävä 2
+			function readData(){
+				let destination = localStorage.getItem("Stop");
+				let arrDate = localStorage.getItem("Date");
+				let selectedService = JSON.parse(localStorage.getItem("Services")) || [];
+
+				if(destination || arrDate || selectedService.length > 0){
+					let sessionDiv = document.querySelector("#sessiondata");
+					
+					sessionDiv.innerHTML = `
+					<p>Destination: ${destination}</p>
+					<p>Arrival Date: ${arrDate}</p>
+					<p>Services: ${selectedService.join(", ")}</p>`
+				}
+			}
+
+			// tehtävä 3
+
+			function getData2(){
+				let destination = document.querySelector("#destination2").value;
+				let arrDate = document.querySelector("#arrival2").value;
+
+				let selectedService = [];
+				document.querySelectorAll('#services2 input[type="checkbox"]:checked').forEach((checkbox) =>{
+					selectedService.push(checkbox.value);
+				});
+				sessionStorage.setItem("Stop", destination)
+				sessionStorage.setItem("Date", arrDate)
+				sessionStorage.setItem("Services", JSON.stringify(selectedService))
+			}
+
+			function readData2(){
+				let destination = sessionStorage.getItem("Stop");
+				let arrDate = sessionStorage.getItem("Date");
+				let selectedService = JSON.parse(sessionStorage.getItem("Services")) || [];
+
+				if(destination || arrDate || selectedService.length > 0){
+					let sessionDiv = document.querySelector("#sessiondata2");
+					
+					sessionDiv.innerHTML = `
+					<p>Destination: ${destination}</p>
+					<p>Arrival Date: ${arrDate}</p>
+					<p>Services: ${selectedService.join(", ")}</p>`
+				}
+			}
+		</script>
 	</body>
 </html>
