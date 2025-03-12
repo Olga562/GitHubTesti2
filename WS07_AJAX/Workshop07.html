@@ -3,7 +3,7 @@
 	<head>
 		<title>Workshop 7</title>
 		<meta charset="utf-8">
-		<link rel="stylesheet" href="css/styles.css">
+		
 	</head>
 	<body class="ws7">
 		<h1>Workshop 7: Using AJAX and parsing XML</h1>
@@ -21,6 +21,7 @@
 		Hint: Use document.getElementsByTagName() function. See PowerPoint for reference.</p>
 
 		<input type="button" name="Fetch" id="Fetch" value="Button" onclick="parseData()">
+		<div id="myDiv"></div>
 		<pre>
 			<!-- THIS IS HERE ONLY FOR DISPLAYing THE STRUCTURE OF THE XML DATA IN THE BROWSER -->
 			&lt;quotes&gt;
@@ -85,12 +86,14 @@
 			<input type="button" name="Fetch3" id="Fetch3" value="Button" onclick="loadAndParseXML()">
 		</p>
 		<div id="tabledata">
-			<table>
-				<tbody>
+			<table border="1">
+				<thead>
 					<tr>
 						<td><strong>Quote</strong></td>
 						<td><strong>Author</strong></td>
 					</tr>
+				</thead>
+				<tbody id = "tableBody">
 					<tr>
 						<td>Here goes the quote data</td>
 						<td>Here goes the author data</td>
@@ -113,9 +116,11 @@
 			<li>News heading 2</li>
 			<li><a href="#">News heading 3</a></li>
 		</ul>
-		<input type="button" name="Fetch3" id="Fetch3b" value="Load YAHOO newsfeed" onclick="loadAndParseNews('https://www.yahoo.com/news/rss/')">
+		<input type="button" name="Fetch3" id="Fetch3b" value="Load YAHOO newsfeed" onclick="loadAndParseNews('https://meijastiina.github.io/news_rss_topstories.xml')">
 		<input type="button" name="Fetch3" id="Fetch3c" value="Load Iltalehti Newsfeed" onclick="loadAndParseNews('http://www.iltalehti.fi/rss/uutiset.xml')">
 		<div id="newsfeed">
 		</div>
+
+		<script src="workshop_scripts.js"></script>
 	</body>
 </html>
